@@ -99,10 +99,22 @@
     color: rgb(34, 34, 34);
 }
 
+.container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.row img {
+    width: 400px;
+    height: 300px;
+    border-radius: .25em;
+    margin-bottom: 5px;
 }
 
 .col {
@@ -114,4 +126,31 @@
 .col-sub {
     font-size: 15px;
     font-weight: bold;
+}
+
+.slide-contatiner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-contatiner {
+    position: absolute;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider-contatiner.animated {
+    -webkit-transition: left .3s ease-in;
+    transition: left .3s ease-in;
 }

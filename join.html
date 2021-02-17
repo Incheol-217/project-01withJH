@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charest="utf-8">
+    <meta name="description" content="사진을 올릴 수 있는 웹">
+    <title>Photo Cloud</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="main-style.css" rel="stylesheet" type="text/css"/>
+    <link href="best-style.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        a:link {text-decoration:none; color:black;}
+        a:visited {text-decoration:none; color:black;}
+        a:active {text-decoration:none; color:black;}
+        a:hover {text-decoration:none; color:black;}
+    </style>
+ </head>
+
+ <body>
+    <div class="nav">
+        <div class="nav-title"><a href="main-page.html">PHOTO CLOUD</a></div>
+        <div class="nav-left-item">
+            <div class="nav-item"><a href="best-page.html">Best</a></div>
+            <div class="nav-item"><a href="lastest-page.html">Lastest</a></div>
+            <div class="nav-item"><a href="award-page.html">Award</a></div>
+        </div>
+    </div>
+
+    <form class="joinContainer" name="joinForm" action="" method="post">
+        <table width="1000px" style="padding:5px 0 5px 0;">
+            <tr>
+                <th>아이디</th>
+                <td>
+                    <input type="text" name="myId" value="" placeholder="아이디를 입력하세요."/>
+                    <button class="btn-myId">중복확인</button>
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td><input type="password" name="myPassword" value="" size="30" placeholder="영문/숫자/특수문화 조합 6~10자"/></td>
+            </tr>
+            <tr>
+                <th>비밀번호 확인</th>
+                <td><input type="password" name="myPasswordRe" value="" size="30"/></td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" name="myName" value="" placeholder="이름을 입력하세요." maxlength=""/></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td>
+                    <input type="email" name="myEmail" value=""/> @
+                    <input type="emailDomain" name="myEmailDomain" value=""/>
+                    <select name="emailaddr">
+                        <option value="">직접입력</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="empal.com">empal.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="msn.com">msn.com</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="nate.com">nate.com</option>
+                     </select>
+                </td>
+            </tr>
+            <tr>
+                <th>연락처</th>
+                <td><select name='phoneNumber' size='1' class='select'>
+                    <option value=''></option>
+                    <option value='010'>010</option>
+                    <option value='011'>011</option>
+                    <option value='016'>016</option>
+                    <option value='017'>017</option>
+                    <option value='018'>018</option>
+                </select> - 
+                <input type="text" name="frontCallNumber" value="" maxlength="4"/> - 
+                <input type="text" name="backCallNumber" value="" maxlength="4"/>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+            </tr>
+
+            <th>메일/sns 정보 수신</th>
+            <td class="chk">
+                <input type="radio" name="chk_mail" checked> 수신
+                <input type="radio" name="chk_mail" value="4"> 수신거부
+             </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="회원가입">
+              <input type="reset" value="취소">
+           </td>
+          </tr>
+        </table>
+
+ </body>
+</html>

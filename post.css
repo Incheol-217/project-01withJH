@@ -1,0 +1,22 @@
+.uploadContainer {
+    margin: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.uploadTable {
+    width: 100%;
+}
+
+.tdLabel {
+    font-weight: bold;
+    width: 90px;
+}
+
+.tbWidth {
+    width: 750px;
+}
+
+.btnPost {
+    margin-top: 10px;
+}
